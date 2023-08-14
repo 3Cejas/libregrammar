@@ -1,0 +1,9 @@
+version: 1
+build:
+  steps:
+    - name: Install Java
+      env:
+        PACKAGE: openjdk-11-jre
+      script:
+        - sudo apt-get update
+        - sudo apt-get install -y $PACKAGE
